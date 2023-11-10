@@ -51,7 +51,7 @@ const { ok, error } = await ecosystem.createContractGroup(group, chainIds, abi)
 ### Adding contracts to a group
 
 > [!NOTE]
-> The contract group *must exist* before adding contracts to it with this method.
+> The contract group *must exist* before using this method to add contracts to it.
 
 Currently, only a single chain can be used per API call. This may change in the near future, so stay tuned.
 
