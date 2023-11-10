@@ -26,7 +26,7 @@ Creating a new instance of the ecosystem client is simple.
 ```typescript
 import { SpecEcosystemClient } from '@spec.dev/ecosystem'
 
-const ecosystem = new SpecEcosystemClient({
+const spec = new SpecEcosystemClient({
     namespaceToken: process.env.SPEC_NAMESPACE_TOKEN
 })
 ```
@@ -45,7 +45,7 @@ const group = 'namespace.ContractName'
 const chainIds = [1, 5, 137, ...] // chain ids for the group
 const abi = [{ type: 'event', name: 'Transfer', ... }, ...]
 
-const { ok, error } = await ecosystem.createContractGroup(group, chainIds, abi)
+const { ok, error } = await spec.createContractGroup(group, chainIds, abi)
 ```
 
 ### Adding contracts to a group
